@@ -12,6 +12,22 @@
 def promedio(numeros):
     print("Funcion promedio")
     resultado = 0
+    sumatoria_numeros = 0
+    cantidad_numeros = 0
+    promedio = 0
+
+
+    for numero in numeros :
+        sumatoria_numeros = sum(numeros)
+        cantidad_numeros = len(numeros)
+    
+    if cantidad_numeros == 0 :
+        print("la lista estaba vacia")
+    
+
+    promedio = sumatoria_numeros / cantidad_numeros
+    resultado = promedio
+
     # La función promedio recibe como parámetro una
     # lista de números. Con ella calcule el promedio como:
 
@@ -33,7 +49,7 @@ def promedio(numeros):
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    numeros = [2, 4, 6, 8, 10, 12]
+    numeros = []
 
     # Alumno: Complete la función "promedio"
 
@@ -43,4 +59,4 @@ if __name__ == '__main__':
     # Luego imprimir en pantalla el valor resultante:
     # print(....)
 
-    print("terminamos")
+    print("el resultado fue de ",resultado_promedio)
